@@ -10,6 +10,7 @@
 ## Día 2 (11/11/2026)
 - Qué hicimos: cambiamos el tema a **Clase 10: Archivos de texto y CSV** y el emprendimiento a un **gimnasio**, porque encaja mejor con el tema y es más acotado para el tiempo que tenemos. Actualizamos la planilla del curso, creamos el repositorio con la estructura de carpetas, el README y el análisis inicial.
 - Quién hizo qué: Alan – repositorio, README, bitácora y análisis.
+-                 Mateo - Screen subidas en Kanban y descripción de las tarjetas en Trello.
 - Qué nos trabó: el cambio de tema y la demora en tener el repositorio compartido.
 - Qué sigue: diseño (diagrama de clases y columnas de cada archivo CSV).
 
