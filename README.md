@@ -4,7 +4,7 @@ Sistema de gestión de socios para un gimnasio – AED2, Clase 10: Archivos de t
 **Materia:** Algoritmos y estructuras de datos 2 (AED2), Prof. Silvina Burgos 
 **Integrantes**
 - Diego ALtamirano : GitHUb : "Usuario"
-- Mateo Aramayo : GitHub :"Usuario"
+- Mateo Aramayo : GitHub :"@mateo1905-cab"
 - Pires Alan Joel : GitHub : @pires12334
 
 **Tablero kanban:** https://trello.com/b/ErUSUj3k/por-hacer
