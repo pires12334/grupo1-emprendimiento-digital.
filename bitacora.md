@@ -14,3 +14,7 @@
 - Qué nos trabó: el cambio de tema y la demora en tener el repositorio compartido.
 - Qué sigue: diseño (diagrama de clases y columnas de cada archivo CSV).
 
+## Día 3 (12/11/2026)
+- Qué hicimos: creamos el proyecto Maven, agregamos opencsv al pom.xml y empezamos la clase Socio (atributos, constructor, getters, setter y tieneCuotaVencida).
+- Quién hizo qué: Alan – proyecto Maven y clase Socio.
+- Qué sigue: terminar Socio (toString), clase Pago, excepciones y lectura/escritura de CSV.
