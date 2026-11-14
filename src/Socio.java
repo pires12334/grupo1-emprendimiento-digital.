@@ -1,24 +1,24 @@
-package gimnasio_modelo;
+package modelo;
 
-public class Socio { 
-    private int numeroSocio;
+public class Socio {
+    private int dni;
     private String nombre;
     private double valorCuota;
     private int pasesDisponibles;
 
-    public Socio(int numeroSocio, String nombre, double valorCuota, int pasesDisponibles) {
-        this.numeroSocio = numeroSocio;
+    public Socio(int dni, String nombre, double valorCuota, int pasesDisponibles) {
+        this.dni = dni;
         this.nombre = nombre;
         this.valorCuota = valorCuota;
         this.pasesDisponibles = pasesDisponibles;
     }
 
-    public int getNumeroSocio() {
-        return numeroSocio;
+    public int getDni() {
+        return dni;
     }
 
-    public void setNumeroSocio(int numeroSocio) {
-        this.numeroSocio = numeroSocio;
+    public void setDni(int dni) {
+        this.dni = dni;
     }
 
     public String getNombre() {
@@ -46,21 +46,21 @@ public class Socio {
     }
 
     public String toCSV() {
-        return numeroSocio + ";" + nombre + ";" + valorCuota + ";" + pasesDisponibles;
+        return dni + ";" + nombre + ";" + valorCuota + ";" + pasesDisponibles;
     }
-    
-    public static Socio fromCSV(String linea) {
-        String[] datos = linea.split(";");
-        int codigo = Integer.parseInt(datos[0]);
-        String nombre = datos[1];
-        double cuota = Double.parseDouble(datos[2]);
-        int pases = Integer.parseInt(datos[3]);
-        return new Socio(codigo, nombre, cuota, pases);
-    }
-}
 
+    public static Socio fromCSV(String linea) {
+        String[] partes = linea.split(";");
+        int dni = Integer.parseInt(partes[0]);
+        String nombre = partes[1];
+        double valorCuota = Double.parseDouble(partes[2]);
+        int pasesDisponibles = Integer.parseInt(partes[3]);
+
+        return new Socio(dni, nombre, valorCuota, pasesDisponibles);
+    }
+
+    @Override
     public String toString() {
-        return "Socio #" + numeroSocio + " | Nombre: " + nombre + 
-               " | Cuota: $" + valorCuota + " | Pases: " + pasesDisponibles;
+        return "Socio [DNI=" + dni + ", Nombre=" + nombre + ", Cuota=$" + valorCuota + ", Pases=" + pasesDisponibles + "]";
     }
 }
