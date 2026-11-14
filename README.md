@@ -3,7 +3,7 @@ Sistema de gestión de socios para un gimnasio – AED2, Clase 10: Archivos de t
 
 **Materia:** Algoritmos y estructuras de datos 2 (AED2), Prof. Silvina Burgos 
 **Integrantes**
-- Diego ALtamirano : GitHUb :@diegoaltamirano597
+- Diego Altamirano : GitHub :@diegoaltamirano597
 - Mateo Aramayo : GitHub :@mateo1905-cab
 - Pires Alan Joel : GitHub : @pires12334
 
@@ -15,11 +15,11 @@ Gimnasio de barrio con planes mensuales (musculacion, funcional, pase libre). Su
 ##Problema que resuelve
 Hoy el gimnasio anota socios, pagos e ingresos en un cuaderno o en plantillas sueltas. No sabe rapido quien tiene la cuenta vencida, los datos se pierden o se duplican y no hay un registro confiable de asistencias.
 
-El programa guarda toda la informacion en **archivos** (CSV y texto) para que los datos no se pierdan al cerrar el sistema y se puedan importar y exoportar.
+El programa guarda toda la informacion en **archivos** (CSV y texto) para que los datos no se pierdan al cerrar el sistema y se puedan importar y exportar.
 
 ##Tema elegido
 **clase 10: Archivos de texto y CSV**
-Lo elegimos porque el problema principal del negocio es *guardar y recuperar informacion*: un gimnasio necwesita conservar los datos de sus socios entre un dia y el otro, y poder pasarlos a otras herramientas (por ejemplo, Excel) en formato CSV
+Lo elegimos porque el problema principal del negocio es *guardar y recuperar informacion*: un gimnasio necesita conservar los datos de sus socios entre un dia y el otro, y poder pasarlos a otras herramientas (por ejemplo, Excel) en formato CSV
 (Nota: al principio del proyecto habiamos elegido la clase 8 con una clinica. El 11/11 cambiamos a la clase 10 con un gimnasio.)
 
 ## Tecnologias 
