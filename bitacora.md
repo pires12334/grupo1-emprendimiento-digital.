@@ -20,3 +20,5 @@
 - Quién hizo qué: Mateo - proyecto CSV, clase Socio (toString) y clase Pago.
 - Qué sigue: terminar excepciones y lectura/escritura de CSV.
   
+## Dia 4 (13/11/2026)
+- Que nos trabo: hicimos dos análisis de negocio y por el mismo motivo dos clases socios. cero comunicacion.
