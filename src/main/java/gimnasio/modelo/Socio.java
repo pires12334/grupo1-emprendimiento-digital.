@@ -1,49 +1,79 @@
-package gimnasio.modelo;
+package modelo;
 
 import java.time.LocalDate;
 
 public class Socio {
-    private String dni;
+    private int dni;
     private String nombre;
-    private String apellido;
-    private String telefono;
-    private String plan;
-    private LocalDate vencimiento;
-
-    public Socio(String dni, String nombre, String apellido, String telefono, String plan, LocalDate vencimiento) {
+    private double valorCuota;
+    private int pasesDisponibles;
+    private LocalDate fechaVencimiento;
+    
+    public Socio(int dni, String nombre, double valorCuota, int pasesDisponibles, LocalDate fechaVencimiento) {
         this.dni = dni;
         this.nombre = nombre;
-        this.apellido = apellido;
-        this.telefono = telefono;
-        this.plan = plan;
-        this.vencimiento = vencimiento;
+        this.valorCuota = valorCuota;
+        this.pasesDisponibles = pasesDisponibles;
+        this.fechaVencimiento = fechaVencimiento;
+    }
+    public int getDni() {
+        return dni;
     }
 
-    public String getDni() {
-        return dni;
+    public void setDni(int dni) {
+        this.dni = dni;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getPlan() {
-        return plan;
+    public double getValorCuota() {
+        return valorCuota;
     }
 
-    public String getTelefono() {
-        return telefono;
+    public void setValorCuota(double valorCuota) {
+        this.valorCuota = valorCuota;
     }
 
-    public LocalDate getVencimiento() {
-        return vencimiento;
+    public int getPasesDisponibles() {
+        return pasesDisponibles;
+    }
+    public LocalDate getFechaVencimiento() {
+        return fechaVencimiento;
     }
 
-    public void setVencimiento(LocalDate vencimiento) {
-        this.vencimiento = vencimiento;
+    public void setFechaVencimiento(LocalDate fechaVencimiento) {
+        this.fechaVencimiento = fechaVencimiento;
+    }
+    public void setPasesDisponibles(int pasesDisponibles) {
+        this.pasesDisponibles = pasesDisponibles;
+    }
+
+    public String toCSV() {
+
+        return dni + ";" + nombre + ";" + valorCuota + ";" + pasesDisponibles + ";" + fechaVencimiento;
+
+    }
+
+    public static Socio fromCSV(String linea) {
+
+        String[] partes = linea.split(";");
+
+        int dni = Integer.parseInt(partes[0]);
+        String nombre = partes[1];
+        double valorCuota = Double.parseDouble(partes[2]);
+        int pasesDisponibles = Integer.parseInt(partes[3]);
+        LocalDate fechaVencimiento = LocalDate.parse(partes[4]);
+
+        return new Socio(dni, nombre, valorCuota, pasesDisponibles, fechaVencimiento);
+    }
+    @Override
+    public String toString() {
+        return "Socio [DNI=" + dni + ", Nombre=" + nombre + ", Cuota=$" + valorCuota + ", Pases=" + pasesDisponibles + "]";
     }
 }
