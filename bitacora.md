@@ -22,3 +22,4 @@
   
 ## Dia 4 (13/11/2026)
 - Que nos trabo: hicimos dos análisis de negocio y por el mismo motivo dos clases socios. cero comunicacion.
+- Que sigue: determinar que vamos a hacer al final.
