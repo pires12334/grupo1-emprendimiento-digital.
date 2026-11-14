@@ -1,4 +1,4 @@
-package gimnasio_modelo;
+package gimnasio.modelo;
 
 public class Principal {
 
