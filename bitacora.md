@@ -23,3 +23,6 @@
 ## Dia 4 (13/11/2026)
 - Que nos trabo: hicimos dos análisis de negocio y por el mismo motivo dos clases socios. cero comunicacion.
 - Que sigue: determinar que vamos a hacer al final.
+- Finalmente logramos coordinarnos y unificar el análisis de negocio. Avanzamos con la estructura del proyecto CSV y la clase socio.
+- Quién hizo qué: Mateo- Proyecto CSV, clase socio (toString) y código base
+- Qué sigue: Completar la clase pagos y asistencias. Definir la versión final del alcance, terminar las excepciones y completar la lectura/escritura de archivos CSV.
