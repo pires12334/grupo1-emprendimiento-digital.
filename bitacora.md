@@ -10,7 +10,7 @@
 ## Día 2 (11/11/2026)
 - Qué hicimos: cambiamos el tema a **Clase 10: Archivos de texto y CSV** y el emprendimiento a un **gimnasio**, porque encaja mejor con el tema y es más acotado para el tiempo que tenemos. Actualizamos la planilla del curso, creamos el repositorio con la estructura de carpetas, el README y el análisis inicial.
 - Quién hizo qué: Alan – repositorio, README, bitácora y análisis.
--                 Mateo - Screen subidas en Kanban y descripción de las tarjetas en Trello.
+                  Mateo - Screen subidas en Kanban y descripción de las tarjetas en Trello. Y creación de la carpeta docs                              con el análisis de requerimiento.              
 - Qué nos trabó: el cambio de tema y la demora en tener el repositorio compartido.
 - Qué sigue: diseño (diagrama de clases y columnas de cada archivo CSV).
 
@@ -26,3 +26,11 @@
 - Finalmente logramos coordinarnos y unificar el análisis de negocio. Avanzamos con la estructura del proyecto CSV y la clase socio.
 - Quién hizo qué: Mateo- Proyecto CSV, clase socio (toString) y código base
 - Qué sigue: Completar la clase pagos y asistencias. Definir la versión final del alcance, terminar las excepciones y completar la lectura/escritura de archivos CSV.
+  
+## Día 5 (14/11/2026)
+-Qué hicimos: Creamos en docs el diseño del sistema que nos había faltado por subir. Completamos la clase Pago y su gestión de archivos (ArchivoPagos), desarrollamos la clase ArchivoSocios (y Socios), implementamos las excepciones personalizadas (DatoInvalido, SocioDuplicado, SocioNoEcontrado) y armamos el menú/flujo en Principal.
+-Quién hizo qué: Diego- completo la clase pagos y las tres excepciones.
+                 Mateo- completo la clase ArchivoSocios y Socios. Creeación del archivo de diseño del sistema.
+                        Screen subidas en Kanban y descripción de las tarjetas en Trello.
+-Qué sigue: Realizar pruebas integrales de lectura y escritura de archivos CSV, validar el manejo de todas las excepciones y ajustar detalles finales en la clase Principal y en la documentación (README.md).
+                 
