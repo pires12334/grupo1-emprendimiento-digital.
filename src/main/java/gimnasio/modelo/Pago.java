@@ -1,4 +1,4 @@
-package modelo;
+package gimnasio.modelo;
 
 import java.time.LocalDate;
 
