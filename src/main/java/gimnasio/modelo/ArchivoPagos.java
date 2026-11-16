@@ -17,7 +17,7 @@ public class ArchivoPagos {
 
 		new File("datos").mkdirs();
 
-	    try (CSVWriter writer = new CSVWriter(new FileWriter("datos/pagos.csv", true))) {
+	    try (CSVWriter writer = new CSVWriter(new FileWriter("datos/movimientos.csv", true))) {
 
 	        String[] datos = {
 	            pago.getDniSocio(),
@@ -33,7 +33,7 @@ public class ArchivoPagos {
 
 	    List<String[]> pagos = new ArrayList<>();
 
-	    try (CSVReader reader = new CSVReader(new FileReader("datos/pagos.csv"))) {
+	    try (CSVReader reader = new CSVReader(new FileReader("datos/movimientos.csv"))) {
 
 	        String[] fila;
 
