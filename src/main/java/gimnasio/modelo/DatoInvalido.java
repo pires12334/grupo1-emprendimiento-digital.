@@ -1,4 +1,4 @@
-package modelo;
+package gimnasio.modelo;
 
 public class DatoInvalido extends Exception {
 
