@@ -1,4 +1,4 @@
-package modelo;
+package gimnasio.modelo;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
