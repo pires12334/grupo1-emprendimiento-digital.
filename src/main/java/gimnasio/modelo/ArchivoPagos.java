@@ -14,6 +14,8 @@ public class ArchivoPagos {
 
 	public void guardarPago(Pago pago) throws IOException {
 
+		new File("datos").mkdirs();
+
 	    try (CSVWriter writer = new CSVWriter(new FileWriter("datos/pagos.csv", true))) {
 
 	        String[] datos = {
