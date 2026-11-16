@@ -33,4 +33,12 @@
                  Mateo- completo la clase ArchivoSocios y Socios. Creeación del archivo de diseño del sistema.
                         Screen subidas en Kanban y descripción de las tarjetas en Trello.
 -Qué sigue: Realizar pruebas integrales de lectura y escritura de archivos CSV, validar el manejo de todas las excepciones y ajustar detalles finales en la clase Principal y en la documentación (README.md).
-                 
+-  Alan creó RegistroAsistencias (registra ingresos en asistencias.txt con FileWriter en modo append, valida y descuenta pases, lee el historial con BufferedReader).
+
+## Día 6 (15/11/2026)
+- Qué hicimos: integramos los tres módulos. Actualizamos el README al modelo de pases, unificamos la clase Socio, corregimos ArchivoSocios, limpiamos archivos duplicados y subimos el módulo de asistencias y el menú principal. El proyecto compila y funciona completo.
+- Quién hizo qué: Alan – actualizó el README (modelo de pases, módulos y responsables), subió RegistroAsistencias y Menu (menú en consola que une socios, pagos y asistencias, con importar y exportar) y borró Principal.java, que no dejaba compilar.
+  Mateo – recuperó la clase Socio definitiva (5 datos) y corrigió ArchivoSocios con OpenCSV (5 columnas, excepciones propias, importar y exportar CSV).
+  Diego – corrigió los packages a gimnasio.modelo, agregó la creación de la carpeta datos y renombró pagos.csv a movimientos.csv en ArchivoPagos, y borró module-info.java.
+- Qué nos trabó: había clases duplicadas (dos Socio, dos menús, dos módulos de asistencias) por falta de comunicación, packages que no coincidían con las carpetas y cada uno trabajaba sobre una copia distinta del proyecto. Acordamos trabajar siempre sobre la versión del repositorio.
+- Qué sigue: completar las pruebas, capturas del programa, README final y preparar la defensa.
