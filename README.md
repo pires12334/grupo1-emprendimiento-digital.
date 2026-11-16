@@ -3,7 +3,7 @@
 **Materia:** Algoritmos y Estructuras de Datos 2 (AED2) – Prof. Silvina Burgos
 
 **Integrantes:**
-- Diego Altamirano – GitHub: @diegoaltamirano597
+- Diego Altamirano – GitHub: @DiegoAlt
 - Pablo Mateo Aramayo – GitHub: @mateo1905-cab
 - Alan Joel Pires – GitHub: @pires12334
 
