@@ -44,7 +44,7 @@ DNI, nombre, valor de la cuota, pases disponibles y fecha de vencimiento.
 1. Clonar o descargar el repositorio.
 2. En Eclipse: **File → Import → Maven → Existing Maven Projects** y elegir la carpeta del proyecto.
 3. Esperar a que Maven descargue OpenCSV.
-4. 4. Abrir `src/main/java/gimnasio/Menu.java` → clic derecho → **Run As → Java Application**.
+4. Abrir `src/main/java/gimnasio/Menu.java` → clic derecho → **Run As → Java Application**..
 
 ## Funcionalidades
 - Alta, consulta, modificación, baja y listado de socios en `socios.csv` (OpenCSV)
