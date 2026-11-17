@@ -44,7 +44,7 @@ DNI, nombre, valor de la cuota, pases disponibles y fecha de vencimiento.
 1. Clonar o descargar el repositorio.
 2. En Eclipse: **File → Import → Maven → Existing Maven Projects** y elegir la carpeta del proyecto.
 3. Esperar a que Maven descargue OpenCSV.
-4. Ejecutar la clase principal (Run As → Java Application). *(en desarrollo)*
+4. 4. Abrir `src/main/java/gimnasio/Menu.java` → clic derecho → **Run As → Java Application**.
 
 ## Funcionalidades
 - Alta, consulta, modificación, baja y listado de socios en `socios.csv` (OpenCSV)
@@ -55,10 +55,28 @@ DNI, nombre, valor de la cuota, pases disponibles y fecha de vencimiento.
 - Manejo de errores con excepciones propias: socio duplicado, socio no encontrado y dato inválido (montos negativos, socio sin pases, formatos incorrectos)
 
 ## Capturas de pantalla
-*(Se completa al final)*
+
+### Menú principal
+![Menú principal](docs/captura_menu.png.png)
+
+### Registro de asistencia
+![Registro de asistencia](docs/captura_asistencia.png.png)
+
+### Socio sin pases (excepción DatoInvalido)
+![Socio sin pases](docs/captura_sin_pases.png.png)
+
+### Historial de asistencias
+![Historial de asistencias](docs/captura_historial.png.png)
+
+### Archivos generados (asistencias.txt y socios.csv)
+![Archivos generados](docs/captura_txt_csv.png)
 
 ## Pruebas realizadas
-*(Ver carpeta `/pruebas`)*
+Ver la carpeta [`/pruebas`](pruebas): casos de prueba con datos de entrada, resultado esperado y resultado obtenido.
 
 ## Conclusiones
-*(Se completa al final)*
+- Guardar los datos en archivos resolvió el problema principal del negocio: los socios, pagos y asistencias ya no se pierden al cerrar el programa.
+- Usamos CSV con OpenCSV para los datos con columnas fijas (socios y pagos), porque se pueden abrir en Excel, y un archivo de texto simple para las asistencias, que es un registro que solo crece.
+- Las excepciones propias (`DatoInvalido`, `SocioDuplicado`, `SocioNoEncontrado`) hacen que el programa avise el error y siga funcionando en vez de cerrarse.
+- Lo más difícil fue coordinar el trabajo en grupo: al principio cada uno tenía su propia versión de la clase Socio y los packages no coincidían con las carpetas. Lo resolvimos unificando el análisis y trabajando siempre sobre la versión del repositorio.
+- Mejoras posibles: no dejar entrar a socios con la cuota vencida y mostrar reportes de ingresos por mes.
